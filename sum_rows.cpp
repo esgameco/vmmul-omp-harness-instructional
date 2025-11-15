@@ -5,6 +5,7 @@
 
 #include <iostream>
 #include <stdio.h>
+#include <omp.h>
 
 void
 sum_rows(int N, int A[], int y[])
@@ -22,6 +23,7 @@ sum_rows(int N, int A[], int y[])
    #pragma omp parallel for
    for (int i = 0; i < N; i++)
    {
+      printf("Total threads: %d \n", omp_get_num_threads());
       sum = 0;
       for (int j = 0; j < N; j++)
       {
