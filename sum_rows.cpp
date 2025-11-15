@@ -19,12 +19,11 @@ sum_rows(int N, int A[], int y[])
    // all N coluimns of row row A[i,*] and place the sum into y[i]
 
    // Put your code here, return the correct result
-   int sum;
    #pragma omp parallel for
    for (int i = 0; i < N; i++)
    {
       printf("Total threads: %d \n", omp_get_num_threads());
-      sum = 0;
+      int sum = 0;
       for (int j = 0; j < N; j++)
       {
          sum += A[i * N + j];
