@@ -1,0 +1,14 @@
+Description:	Reference dgemv.
+
+Working on problem size N=1024 
+ Time elapsed = 0.000515 
+Working on problem size N=1024 
+ Time elapsed = 0.000161 
+Working on problem size N=2048 
+ Time elapsed = 0.000531 
+Working on problem size N=4096 
+ Time elapsed = 0.003979 
+Working on problem size N=8192 
+ Time elapsed = 0.018535 
+Working on problem size N=16384 
+ Time elapsed = 0.076926 
